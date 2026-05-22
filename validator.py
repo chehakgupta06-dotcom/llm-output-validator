@@ -25,7 +25,7 @@ class LLMOutputValidator:
         self.llm = ChatGroq(
     model="llama-3.3-70b-versatile",
     temperature=0.3,
-    groq_api_key="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"
+    groq_api_key="OPENAI_API_KEY"
 )
         self.parser = PydanticOutputParser(pydantic_object=ProductReview)
         self.max_retries = max_retries
